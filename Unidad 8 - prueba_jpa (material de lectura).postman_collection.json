@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "8d8776ef-476e-44a1-b43f-503be0d1f5db",
+		"name": "Unidad 8 - prueba_jpa (material de lectura)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/personas/crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"apellido\":\"Moto\",\r\n    \"edad\":15,\r\n    \"nombre\":\"Yugi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/personas/crear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personas",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/personas/traer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/personas/traer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personas",
+						"traer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/personas/delete/(nro)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/personas/borrar/(nro)",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personas",
+						"borrar",
+						"(nro)"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/personas/editar/(nro)?nombre=(nombreEjemplo)&apellido=(apellidoEjemplo)&edad=(edadEjemplo)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/persona/editar/6?nombre=Jesica&apellido=Montul&edad=28",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona",
+						"editar",
+						"6"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Jesica"
+						},
+						{
+							"key": "apellido",
+							"value": "Montul"
+						},
+						{
+							"key": "edad",
+							"value": "28"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
